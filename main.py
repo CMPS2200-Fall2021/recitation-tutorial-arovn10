@@ -1,10 +1,10 @@
 def sum_of_squares(a):
 
-	 return a[0]**2 + a[1]**2 + a[2]**2
+    result = 0
 
-
-
-
+    for i in a:
+        result += i**2
+    return result
 
 def test_one():
     assert sum_of_squares([1,2,3]) == 14
